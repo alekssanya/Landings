@@ -1,0 +1,357 @@
+@font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/Gilroy-Bold.woff2") format("woff2"),
+        url("../fonts/Gilroy-Bold.woff") format("woff");
+    font-style: normal;
+    font-weight: bold;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/Gilroy-Extrabold.woff2") format("woff2"),
+        url("../fonts/Gilroy-Extrabold.woff") format("woff");
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/Gilroy-Medium.woff2") format("woff2"),
+        url("../fonts/Gilroy-Medium.woff") format("woff");
+    font-style: normal;
+    font-weight: medium;
+    font-display: swap;
+}
+
+body {
+    font-family: "Gilroy", sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: 18px;
+    line-height: 22px;
+    background-color: #0C1E27;
+}
+
+.container {
+    max-width: 1760px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.suptitle {
+    color: #FBD784;
+    font-weight: 800;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+}
+
+.suptitle::before {
+    content: "";
+    display: inline-block;
+    width: 72px;
+    height: 2px;
+    background-color: #FBD784;
+    margin-right: 24px;
+    margin-bottom: 0.35rem;
+}
+
+.background-wrapper{
+    background-image: url("../images/BG.png");
+    background-repeat: no-repeat;
+    background-size: 100% 1900px;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 64px;
+    align-items: center;
+}
+
+.menu__list {
+    display: flex;
+    white-space: nowrap;
+}
+
+.menu__item+.menu__item {
+    margin-left: 40px;
+}
+
+.account {
+    display: flex;
+    align-items: center;
+}
+
+
+.header-left {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    padding-top: 360px;
+}
+
+.header-left__text {
+    writing-mode: vertical-rl;
+}
+
+.header-left__link {
+    margin-top: 24px;
+}
+
+.header-center {
+    display: table;
+    padding-top: 200px;
+    margin: 0 auto 843px;
+}
+
+.header-center__text {
+    font-family: "Chronicle Display";
+    font-weight: 600;
+    font-size: 88px;
+    line-height: 100px;
+    text-transform: capitalize;
+    max-width: 985px;
+}
+
+.header-center__link {
+    display: flex;
+    padding-top: 32px;
+}
+
+.header-center__link-text {
+    margin-right: 20px;
+}
+
+.header-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.header-right {
+    position: fixed;
+    top: calc(50% - 38px);
+    bottom: 50%;
+    align-self: flex-end;
+}
+
+.scroll-position__item {
+    text-align: right;
+    border-right: 3px solid rgba(255, 255, 255, .5);
+    padding: 30px 32px 30px 0px;
+}
+
+.scroll-position__item--active {
+    border-color: white;
+}
+
+.main-inner {
+    background-color: #0C1E27;
+    margin: 0 auto;
+    max-width: 1462px;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 200px;
+}
+
+.main-content:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+.main-content:nth-child(odd) .main-content__inner {
+    padding: 140px 114px 140px 150px;
+}
+
+.main-content:nth-child(even) .main-content__inner {
+    padding: 140px 0px 140px 264px;
+}
+
+.main-content__inner {
+    position: relative;
+    max-width: 632px;
+}
+
+.main-content__suptitle {
+    position: relative;
+    margin-bottom: 27px;
+}
+
+.main-content__title::before {
+    position: absolute;
+    font-size: 240px;
+    line-height: 240px;
+    opacity: 0.1;
+    top: 24px;
+    left: 0px;
+}
+
+.first::before {
+    content: "01";
+}
+
+.second::before {
+    content: "02";
+    left: 105px;
+}
+
+.third::before {
+    content: "03";
+}
+
+.main-content__title {
+    margin-bottom: 27px;
+    font-family: Chronicle Display;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 77px;
+}
+
+.main-content__text {
+    line-height: 32px;
+    margin-bottom: 27px;
+}
+
+.main-content__link {
+    color: #FBD784;
+}
+
+.main-content__link::after {
+    content: url("../images/arrow.svg");
+    margin-left: 20px;
+}
+
+.footer {
+    padding-bottom: 120px;
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-left__logo {
+    margin-bottom: 24px;
+}
+
+.footer-left__descr {
+    margin-bottom: 122px;
+    width: 303px;
+    line-height: 32px;
+}
+
+.footer-left__copyright {
+    font-weight: 500;
+    line-height: 32px;
+    opacity: 0.5;
+}
+
+.footer-links {
+    display: flex;
+}
+
+.footer-links__menu+.footer-links__menu {
+    margin-left: 212px;
+}
+
+.footer-links__item {
+    margin-bottom: 16px;
+}
+
+.footer-links__title {
+    font-size: 24px;
+    line-height: 32px;
+    color: #FBD784;
+    margin-bottom: 24px;
+}
+
+.footer-links__link {
+    font-weight: 500;
+    line-height: 32px;
+}
+
+@media (max-width: 1480px) {
+    .main-content:nth-child(even) .main-content__inner {
+        padding: 140px 10px 140px 64px;
+    }
+
+    .main-content:nth-child(odd) .main-content__inner {
+        padding: 140px 14px 140px 10px;
+    }
+
+    .main-content {
+        max-width: 1300px;
+    }
+
+    .footer-links__menu + .footer-links__menu {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 1030px) {
+    .header-left{
+        display: none;
+    }
+
+    .header-right{
+        display: none;
+    }
+    
+    .main-content {
+        flex-direction: column !important;
+    }
+
+    .main-content__inner{
+        padding: 0 !important;
+    }
+
+    .main-content:nth-child(odd) {
+        flex-direction: row;
+    }
+
+    .second::before {
+        left: 0px;
+    }
+
+    .header-center{
+        margin-bottom: 400px;
+    }
+
+    .background-wrapper{
+        background-size: cover;
+    }
+}
+
+@media (max-width: 560px) {
+    .menu{
+        display: none;
+    }
+
+    .header-center__text{
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    .footer-inner{
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width: 365px) {
+    .main-content__title::before{
+        font-size: 180px;
+    }
+
+    .main-content__title{
+        font-size: 50px;
+    }
+}
